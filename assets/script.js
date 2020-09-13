@@ -41,7 +41,6 @@ $(document).ready(function(){
     $(".saveBtn").on("click", function(){
         var eventTime = $(this).siblings("div.hour").text()
         window.localStorage.setItem(eventTime,$(this).siblings("textarea").val());
-        location.reload();
     })
 
     //event listener for clear all schedule button

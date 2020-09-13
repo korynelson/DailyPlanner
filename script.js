@@ -1,11 +1,16 @@
 function updateTime () {
-    $("#currentDay").text(moment().format('MMMM Do YYYY, HH:mm:ss A'));
+    window.localStorage.setItem("localTime",moment().format('MMMM Do YYYY, HH:mm:ss A'))
+    $("#currentDay").text(window.localStorage.getItem("localTime"));
 };
 
 function renderEvents(){
     $("textarea").each(function(){
         var eventTime = $(this).siblings("div.hour").text();
         $(this).text(window.localStorage.getItem(eventTime));
+    })
+
+    $("row").each(function(){
+
     })
 }
 
@@ -15,8 +20,22 @@ $(document).ready(function(){
     renderEvents()
 
     $(".saveBtn").on("click", function(){
-        var testing = $(this).siblings("div.hour").text()
-        window.localStorage.setItem(testing,$(this).siblings("textarea").val());
+        var eventTime = $(this).siblings("div.hour").text()
+        window.localStorage.setItem(eventTime,$(this).siblings("textarea").val());
+        location.reload();
+    })
+
+    $("#clearBtn").on("click",function(){
+        window.localStorage.clear();
+        location.reload();
+    })
+
+    $("#saveAllBtn").on("click", function(){
+        $("textarea").each(function(){
+            var eventTime = $(this).siblings("div.hour").text()
+            window.localStorage.setItem(eventTime,$(this).val());
+            location.reload();
+        })
     })
     
 })

@@ -5,6 +5,6 @@ Link:
 https://korynelson.github.io/DailyPlanner/
 
  
-![Image of Daily Planner](/assets/dailyPlanner.png)
+![Image of Daily Planner](/assets/dailyPlanner.PNG)
 
 

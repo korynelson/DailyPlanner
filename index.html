@@ -19,6 +19,8 @@
   </head>
 
   <body>
+
+    <!--MAIN PAGE HEADER-->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -27,79 +29,80 @@
       <button type="button" class="btn btn-secondary" id="saveAllBtn">SAVE ALL</button>
     </header>
 
-    <!-- Timeblocks go here -->
-<div class="container time-block">
+    <!-- Insert the calendar event time blocks -->
+    <div class="container time-block">
 
-  <div class="row">
-    <div class="col-auto hour">08:00</div>
-    <textarea class="col"></textarea>
-    <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
-  </div>
+      <div class="row">
+        <div class="col-auto hour">08:00</div>
+        <textarea class="col"></textarea>
+        <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
+      </div>
 
-  <div class="row">
-    <div class="col-sm-auto hour">09:00</div>
-    <textarea class="col"></textarea>
-    <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
-  </div>
+      <div class="row">
+        <div class="col-sm-auto hour">09:00</div>
+        <textarea class="col"></textarea>
+        <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
+      </div>
 
-  <div class="row">
-    <div class="col-sm-auto hour">10:00</div>
-    <textarea class="col"></textarea>
-    <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
-  </div>
+      <div class="row">
+        <div class="col-sm-auto hour">10:00</div>
+        <textarea class="col"></textarea>
+        <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
+      </div>
 
-  <div class="row">
-    <div class="col-sm-auto hour">11:00</div>
-    <textarea class="col"></textarea>
-    <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
-  </div>
+      <div class="row">
+        <div class="col-sm-auto hour">11:00</div>
+        <textarea class="col"></textarea>
+        <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
+      </div>
 
-  <div class="row">
-    <div class="col-sm-auto hour">12:00</div>
-    <textarea class="col"></textarea>
-    <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
-  </div>
+      <div class="row">
+        <div class="col-sm-auto hour">12:00</div>
+        <textarea class="col"></textarea>
+        <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
+      </div>
 
-  <div class="row">
-    <div class="col-sm-auto hour">13:00</div>
-    <textarea class="col"></textarea>
-    <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
-  </div>
+      <div class="row">
+        <div class="col-sm-auto hour">13:00</div>
+        <textarea class="col"></textarea>
+        <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
+      </div>
 
-  <div class="row">
-    <div class="col-sm-auto hour">14:00</div>
-    <textarea class="col"></textarea>
-    <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
-  </div>
+      <div class="row">
+        <div class="col-sm-auto hour">14:00</div>
+        <textarea class="col"></textarea>
+        <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
+      </div>
 
-  <div class="row">
-    <div class="col-sm-auto hour">15:00</div>
-    <textarea class="col"></textarea>
-    <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
-  </div>
-  
-  <div class="row">
-    <div class="col-sm-auto hour">16:00</div>
-    <textarea class="col"></textarea>
-    <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
-  </div>
+      <div class="row">
+        <div class="col-sm-auto hour">15:00</div>
+        <textarea class="col"></textarea>
+        <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-auto hour">16:00</div>
+        <textarea class="col"></textarea>
+        <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
+      </div>
 
-  <div class="row">
-    <div class="col-sm-auto hour">17:00</div>
-    <textarea class="col"></textarea>
-    <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
-  </div>
+      <div class="row">
+        <div class="col-sm-auto hour">17:00</div>
+        <textarea class="col"></textarea>
+        <button type="button" class="col-1 saveBtn"><i class="fas fa-fighter-jet "></i></button>
+      </div>
 
-  <div class="row" id="1800">
-    <div class="col-sm-auto hour">18:00</div>
-    <textarea class="col"></textarea>
-    <button type="button" class="col-1 saveBtn" id="1800"><i class="fas fa-fighter-jet ">test</i></button>
-  </div>
+      <div class="row" id="1800">
+        <div class="col-sm-auto hour">18:00</div>
+        <textarea class="col"></textarea>
+        <button type="button" class="col-1 saveBtn" id="1800"><i class="fas fa-fighter-jet ">test</i></button>
+      </div>
+    </div>
 
- </div>
-
+    <!--link all scripts-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
+
   </body>
 </html>

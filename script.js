@@ -9,8 +9,26 @@ function renderEvents(){
         $(this).text(window.localStorage.getItem(eventTime));
     })
 
-    $("row").each(function(){
+    $(".row").each(function(){
+        var eventTime = $(this).children("div.hour").text()
+        var m = moment()
+        var roundTime = m.startOf('hour').format("HH:mm");
 
+            if (roundTime<eventTime) {
+                console.log($(this).attr("class"))
+                $(this).children("textarea").addClass("future")
+            }
+
+            else if (roundTime>eventTime) {
+                console.log($(this).attr("class"))
+                $(this).children("textarea").addClass("past")
+            }
+
+            else if (roundTime===eventTime) {
+                console.log($(this).attr("class"))
+                $(this).children("textarea").addClass("present")
+            }
+            
     })
 }
 

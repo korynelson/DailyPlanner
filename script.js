@@ -26,8 +26,11 @@ $(document).ready(function(){
     })
 
     $("#clearBtn").on("click",function(){
-        window.localStorage.clear();
-        location.reload();
+        $("textarea").each(function(){
+            var eventTime = $(this).siblings("div.hour").text()
+            window.localStorage.clear(eventTime);
+            location.reload();
+        })
     })
 
     $("#saveAllBtn").on("click", function(){
